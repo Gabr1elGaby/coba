@@ -1,0 +1,1187 @@
+
+/* WARNA YANG TELAH DITETAPKAN */
+:root{
+    --primary: #0e1a4d;
+    --bg: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* UNTUK KESELURUHAN */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none; 
+}
+
+
+/* BAGIAN BODY */
+body{
+    background-color: var(--bg) ;
+    color: #010101;
+
+}
+
+/* BAGIAN NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    list-style-type: none;
+    backdrop-filter: blur(8px);
+}
+
+/* LOGO */
+.navbar .logo{
+    width: 10%;
+}
+
+.navbar .navbar-nav .menu{
+    display: flex;
+
+}
+
+.navbar .navbar-nav .menu .sub-menu a, .sub-menu-menu a{
+    padding: 0;
+    display: flex;
+}
+
+
+.navbar .navbar-nav .menu .sub-menu, .sub-menu-menu{
+    display: none;
+
+}
+
+.navbar .navbar-nav .menu .sub-menu .sub-menu-menu .p{
+    position: relative;
+    top: -47px;
+    left: 170px;
+}
+
+.navbar .navbar-nav a{
+    color: #fff;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+
+    color: var(--primary)
+}
+
+.navbar .navbar-nav a::after{
+    content: '' ;
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.01rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+
+}
+
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.navbar ,.navbar-extra a {
+    color: #010101;
+    margin: 0 0.5rem;
+}
+
+.navbar ,.navbar-extra a:hover{
+
+    color: var(--primary);
+}
+
+#menu-box{
+    display: none;
+}
+
+
+.home{
+    min-height: 155vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(BEM3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 60%;
+    position: relative;
+    mask-image: linear-gradient(rgb(45, 41, 41)80%, rgba(30, 25, 25, 0.812));
+}
+
+.home .content{
+    padding: 5rem 10%;
+    max-width: 90rem;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 7REM;
+
+}
+
+.home .content h2{
+    font-size: 7rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 5px 5px 5px black;
+    
+ }
+
+.home .content span{
+    color: #fff;
+}
+
+
+.bem{
+    background-color: #1C1C1C;
+    color: #B0BEC5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.bem, .sd{
+    padding: 0 0 5rem 0;
+}
+
+.bem .sd h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 1.5rem 0;
+    font-weight: bolder;
+    animation: appear linear;
+    animation-timeline: view();  
+    animation-range: entry 0% cover 30%;
+}
+
+.bem .sd p, .gam p{
+    font-size: 20px;
+    text-align: justify;
+    margin: 0 0 2rem 0;
+    font-weight: lighter;
+    animation: appear linear;
+    animation-timeline: view();  
+    animation-range: entry 0% cover 30%;
+
+}
+
+.gam{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+.gam img{
+    margin: auto;
+    width: 25%;
+    position: relative;
+    animation: jump 2s ease-in-out infinite;
+    box-shadow: 0 0 20px 10px rgba(255, 223, 0, 0.6); /* Efek cahaya kuning */
+    border-radius: 50%; /* Agar gambar berbentuk lingkaran */
+}
+
+.gam p{
+    padding-top: 7rem;
+    margin: 0 0 3rem 5rem;
+}
+
+.gam span{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 3rem 0;
+}
+
+.tombol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.tombol button, .bem .sd button{
+    display: block;
+    margin: auto;
+    border-radius: 2rem;
+    width: 11rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #ffffff;
+    animation: appear linear;
+    animation-timeline: view();  
+    animation-range: entry 0% cover 30%;
+}
+
+.tombol button a, .bem .sd button a{
+    font-size: 1.3rem;
+}
+
+.tombol button::after, .bem .sd button::after{
+    content: "";
+}
+
+.tombol button:hover, .bem .sd button:hover{
+    box-shadow: 3px 5px #888888;
+}
+
+
+
+/* VISI MISI */
+.visimisi, .struktur, .bem, .sosial{
+    padding: 7rem 7% 1.3rem;
+}
+
+.visimisi{
+    background-color: #0A1128;
+    color: #C0C0C0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.visimisi .vm h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    animation: appear linear;
+    animation-timeline: view();  
+    animation-range: entry 0% cover 30%;
+}
+
+.visimisi .vm a{
+    display: block;
+    text-align: center;
+    animation: appear linear;
+    animation-timeline: view();  
+    animation-range: entry 0% cover 30%;
+    
+}
+
+.visimisi .vm p{
+    font-size: 20px;
+    margin: 1rem 0 0 0;
+    text-align: justify;
+    animation: appear linear;
+    animation-timeline: view();  
+    animation-range: entry 0% cover 30%;
+}
+
+
+
+/* .struktur .struk h2{
+    color: #010101;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.struktur .struk .gam-struk{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.struktur .struk .gam-struk img{
+   max-width: 100%;
+   height: auto;
+} */
+
+.kegiatan{
+    position: relative;
+    text-align: center;
+    background-color: #2C2F33;
+    color: #B0BEC5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kegiatan .kegiatanbem{
+    padding-top: 7rem;
+}
+
+.kegiatan .kegiatanbem h2{
+    font-size: 3rem;
+}
+
+.kegiatan .kegiatanbem .image img{
+    width: 100%;
+    height: 60%;
+}
+
+.kegiatan .kegiatanbem .text{
+    position: absolute;
+    top: 35%;
+    right: 50%;
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent black background */
+    color: #fff;
+
+}
+
+.kegiatan .kegiatanbem .text h1{
+    margin-bottom: 10px;
+}
+
+.kegiatan .kegiatanbem .text p{
+    line-height: 1.6;
+}
+
+
+
+/* BERITA DAN ACARA */
+.container {
+    position: fixed;
+    top: 10rem;
+    right: 10px;
+}
+
+/* Calendar icon */
+.calendar-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #002855;
+    background-color: #e3000f;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Wrapper for ACARA and BERITA content */
+.wrapper {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 10rem;
+    right: 0;
+    background-color: #002855;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+/* Each section container */
+.section-container {
+    padding: 10px;
+}
+
+.section {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #e3000f;
+    text-align: center;
+}
+
+.section h2 {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Replace 'content' with 'aber' */
+.aber {
+    display: none;
+    padding: 10px;
+}
+
+.aber .event, .aber .news {
+    background-color: #003b6f;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.aber .event img, .aber .news img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.aber .event p, .aber .news p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.aber .news a, .more a, .aber .event a{
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.aber .news a::after, .more a::after, .aber .event a::after{
+    content: "";
+}
+
+.aber .news a:hover, .more a:hover, .aber .event a:hover{
+    text-decoration: underline;
+}
+
+.aber .event span, .aber .news span {
+    font-size: 12px;
+    display: block;
+    color: #ccc;
+}
+
+.aber .more {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 14px;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+
+/*footer*/
+footer{
+    background-color: var(--primary);
+    text-align: center;
+
+}
+
+footer .social{
+    padding: 1rem 0;
+}
+
+footer .social a{
+    color: #fff;
+    margin: 1rem;
+
+}
+
+
+
+footer .social a:hover, footer .links a:hover{
+    color: var(--bg);
+}
+
+footer .links a{
+    color: #fff;
+    padding: 0.7rem 1rem;
+}
+
+footer .credit{
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+footer .credit a{
+    color: var(--bg);
+    font-weight: 700;
+}
+
+/* ----------------------LOGO----------------------------- */
+
+.profile{
+    padding: 7rem 0 0 0;
+    background-color: #1E2A38;  
+
+}
+
+.profile .logo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile .logo img{
+    width: 20%;
+    margin: auto;
+    position: relative;
+    animation: jump 2s ease-in-out infinite;
+    box-shadow: 0 0 20px 10px rgba(255, 223, 0, 0.6); /* Efek cahaya kuning */
+    border-radius: 50%; /* Agar gambar berbentuk lingkaran */
+}
+
+.profile h2, .struktur .struk h2{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #FFFFFF;
+    font-size: 29px;
+
+}
+
+.profile  span{
+    color: #FFFFFF;
+}
+
+.profile .filosofi{
+    margin: 0 0 0 0;
+    padding: 1rem 7% 1.3rem;
+    color: #FFFFFF;
+}
+
+.profile .filosofi h1{
+    margin: 0 0 1rem 0;
+    font-size: 29px;
+}
+
+.profile .filosofi p{
+    text-align: justify;
+    margin: 0 0 3rem 0;
+    font-size: 18px;
+}
+
+.judul{
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.judul h2{
+    font-size: 29px;
+}
+
+.filologo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding: 2rem;
+    max-width: 2400px;
+  }
+
+  .locard {
+    background-color: #1C1C1C;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .locard p{
+    color: #9CA3AF;
+  }
+
+  .locard img {
+    width: 100px;
+    height: auto;
+    position: relative;
+    animation: loncat 1s ease-in-out infinite;
+
+  }
+
+
+
+  /* -------------HUBKAM---------------------------- */
+
+.email{
+    padding: 7rem 7% 1.3rem;
+    background-color: #000000;
+}
+
+.hubungi{
+    padding: 7rem 0 5rem 0;
+    background-color: #021853;
+    color: #fff;
+}
+
+.hubungi h1{
+    text-align: center;
+    background-color: #ffc800;
+    text-shadow: 0 0 5px black;
+    font-size: 20px;
+}
+
+
+
+.profile1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.videoprofile{
+    background-color: #0e1a4d;
+    border-radius: 5px;
+
+
+}
+
+.videoprofile h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contak, .contak1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 3rem 0;
+}
+.contak span, .contak1 span {
+
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 0 0 4rem;
+}
+.contak p {
+    margin: 0 0 0 4rem;
+    font-size: 20px;
+    
+}
+
+.contak1 p {
+    margin: 0 0 0 6rem;
+    font-size: 20px;
+    
+}
+
+.video-section video {
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 315px;
+    margin: 2rem 0 0 0;
+}
+
+
+.video{
+    width: 1000px;
+    height: 700px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.video video{
+    width: 37%;
+}
+
+.video h2{
+    text-align: center;
+}
+
+
+
+.pera {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 0 0 10%;
+    
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+input[type="text"], input[type="email"], select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.pera button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.pera button:hover {
+    background-color: #555;
+}
+
+
+
+/* Untuk resolusi HP */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    html {
+        font-size: 90%;
+    }
+
+    #menu-box{
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -1000%;
+        background-color: #010101;
+        width: 20rem;
+        transition: 0.3s;
+        overflow-y: scroll;
+        height: 530px;
+    }
+
+    .navbar .navbar-nav .menu{
+        display:block;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar-nav .menu .item a{
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        display: block;
+        padding: 5px 30px;
+        line-height: 60px;
+    }
+
+    .navbar-nav .menu .item a:hover{
+        background: red;
+        transition: 0.3s;
+    }
+
+    .navbar-nav .menu .item i{
+        margin-right: 15px;
+    }
+
+    .navbar-nav .menu .item a .dropdown{
+        position: absolute;
+        right: 0;
+        margin: 20px;
+        transition: 0.3s ease;
+    }
+
+    .navbar-nav .menu .item .sub-menu{
+        background: #010101;
+    }
+   
+
+    .navbar .navbar-nav a {
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding-right: 5rem;
+        font-size: 2rem;
+        position: relative;
+    }
+
+    .home .content{
+        padding: 1rem;
+    }
+
+    .home .content h2{
+        font-size: 3rem;
+    }
+
+    .home{
+        background-image: url(BEM2.jpg);
+        background-position: center center;
+        background-size:cover;
+        justify-content: center;
+        min-height: 100vh; 
+        mask-image: none; 
+        background-repeat: no-repeat;
+        position: relative;
+        mask-image: linear-gradient(rgba(0, 0, 0, 1)90%, rgba(0, 0, 0, 0));
+    }
+
+
+
+    
+
+
+    .kegiatan .kegiatanbem .text{
+        top: 50%;
+        }
+    
+    .text h1{
+        font-size: 20px;
+    }
+
+    .text p{
+        font-size: 10px;
+    }
+
+    .navbar .navbar-nav .menu .sub-menu .sub-menu-menu .p{
+        position: relative;
+        top: 0px;
+         left: 0px;
+    }
+
+    .filologo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+
+    }
+
+    .contak1 p {
+        margin: 0 0 0 4rem;
+        font-size: 20px;
+        
+    }
+
+    .video video{
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+
+    .video{
+        width: 350px;
+        height: 900px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    
+    }
+
+    .pera {
+        width: 600px;
+        height: 550px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin: 0 0 0 10%;
+        
+    }
+        
+       
+}
+
+/* Untuk resolusi tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    html {
+        font-size: 100%;
+    }
+
+
+    #menu-box{
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -1000%;
+        background-color: #010101;
+        width: 20rem;
+        transition: 0.3s;
+        overflow-y: scroll;
+        height: 530px;
+    }
+
+    .navbar .navbar-nav .menu{
+        display:block;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar-nav .menu .item a{
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        display: block;
+        padding: 5px 30px;
+        line-height: 60px;
+    }
+
+    .navbar-nav .menu .item a:hover{
+        background: red;
+        transition: 0.3s;
+    }
+
+    .navbar-nav .menu .item i{
+        margin-right: 15px;
+    }
+
+    .navbar-nav .menu .item a .dropdown{
+        position: absolute;
+        right: 0;
+        margin: 20px;
+        transition: 0.3s ease;
+    }
+
+    .navbar-nav .menu .item .sub-menu{
+        background: #010101;
+    }
+   
+
+    .navbar .navbar-nav a {
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding-right: 5rem;
+        font-size: 2rem;
+        position: relative;
+    }
+
+    .home .content{
+        padding: 1rem;
+    }
+
+    .home{
+        background-image: url(BEM2.jpg);
+        background-position: center center;
+        background-size:cover;
+        justify-content: center;
+        min-height: 100vh; 
+        mask-image: none; 
+        background-repeat: no-repeat;
+        position: relative;
+        mask-image: linear-gradient(rgba(0, 0, 0, 1)90%, rgba(0, 0, 0, 0));
+    }
+
+    
+
+
+    .kegiatan .kegiatanbem .text{
+        top: 50%;
+        }
+    
+    .text h1{
+        font-size: 20px;
+    }
+
+    .text p{
+        font-size: 10px;
+    }
+
+    .navbar .navbar-nav .menu .sub-menu .sub-menu-menu .p{
+        position: relative;
+        top: 0px;
+         left: 0px;
+    }
+
+    .filologo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+
+    }
+
+    .contak1 p {
+        margin: 0 0 0 6rem;
+        font-size: 20px;
+        
+    }
+
+    .video video{
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+
+    .video{
+        width: 350px;
+        height: 900px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    
+    }
+
+    .pera {
+        width: 600px;
+        height: 550px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin: 0 0 0 10%;
+        
+    }
+        
+    
+}
+
+
+
+
+/* --------------------------------ANGGOTA---------------------------------------- */
+
+.grub{
+    padding: 7rem 7% 1.3rem;
+    background-color: #337EA9;
+    color: #fff;
+}
+
+.grub h1 {
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  /* Styling untuk Foto Bersama */
+  .team-photo {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+  }
+  
+  .team-photo img {
+    width: 100%;
+    height: auto;
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .team-photo:hover img {
+    box-shadow: 0px 0px 30px rgba(0, 150, 255, 0.6); /* Efek glow pada hover */
+  }
+  
+  /* Styling untuk ketua divisi */
+  .leader {
+    width: 350px;
+    height: 750px;
+    display: block;
+    margin: auto auto 2rem auto;
+    background-color: #1e1e1e;
+    overflow: hidden;
+    transition: transform 0.3s;
+    padding: 0 0 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  .leader:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+  }
+  
+  .leader .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .leader:hover .photo img {
+    box-shadow: 0px 0px 20px rgba(0, 150, 255, 0.5); /* Efek glow biru */
+  }
+  
+  .leader .info h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .leader .info p {
+    color: #b0b0b0;
+    font-size: 20px;
+  }
+  
+  /* Grid untuk anggota */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+  }
+  
+  .card .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover .photo img {
+    box-shadow: 0px 0px 20px rgba(0, 150, 255, 0.5); /* Efek glow biru */
+  }
+  
+  .info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .info h2 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  
+  .info p {
+    font-size: 15px;
+    color: #b0b0b0;
+  }
+
+
+
+/* -----------------------------------------------ANIMASI--------------------------------------------------------------------- */
+
+
+
+
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes jump {
+    0%, 100% {
+        transform: scale(1); /* Ukuran normal (jauh) */
+        box-shadow: 0 0 20px 10px rgba(255, 221, 0, 0.301); /* Cahaya normal */
+      }
+      50% {
+        transform: scale(1.2); /* Mendekat (besar) */
+        box-shadow: 0 0 30px 15px rgba(255, 221, 0, 0.367); /* Cahaya lebih intens saat mendekat */
+      }
+  }
+
+  @keyframes loncat {
+    0%, 100% {
+      top: 0; /* Awal dan akhir berada di posisi awal */
+    }
+    50% {
+      top: -20px; /* Naik sedikit */
+    }
+  }
